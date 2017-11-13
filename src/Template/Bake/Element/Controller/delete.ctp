@@ -23,7 +23,7 @@
      */
     public function delete($id = null)
     {
-        $this->request->allowMethod(['post', 'delete']);
+      // $this->request->allowMethod(['post', 'delete']);
         $<%= $singularName %> = $this-><%= $currentModelName %>->get($id);
         if ($this-><%= $currentModelName; %>->delete($<%= $singularName %>)) {
             $this->Flash->success(__('The <%= strtolower($singularHumanName) %> has been deleted.'));
